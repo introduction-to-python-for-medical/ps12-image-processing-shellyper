@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 from scipy.signal import convolve2d
-import matplotlib.pyplot as plt
+
 
 def load_image(file_path):
   
@@ -9,7 +9,6 @@ def load_image(file_path):
     image_array = np.array(image)
     return image_array 
 
-from scipy.signal import convolve2d
 def edge_detection(image_array):
    
     grayscale_image = np.mean(image_array, axis=2)

@@ -9,12 +9,6 @@ def load_image(file_path):
     image_array = np.array(image)
     return image_array 
 
-file_path = '/content/lena.jpg'  
-image_array = load_image(file_path)
-
-plt.imshow(image_array, cmap='gray')
-
-
 from scipy.signal import convolve2d
 def edge_detection(image_array):
    
@@ -34,4 +28,4 @@ def edge_detection(image_array):
     return edgeMAG
 
 
-edge_detection(load_image(file_path))
+
